@@ -9,6 +9,7 @@ var usuarioService = require('./UsuarioService')
 app.use(express.json())
 app.listen(process.env.PORT || 3030)
 
+//post
 app.post('/users', (req, res, next) => {
     let usuario = {
         nome: req.body.nome,
@@ -19,10 +20,12 @@ app.post('/users', (req, res, next) => {
     res.send(usuario)
 })
 
+//delete
 app.delete('/users/:id', (req, res, next) => {
     res.send(usuarioService.remover(parseInt(req.params.id)))
 })
 
+//update
 app.put('/users/:id', (req, res, next) => {
     let usuario = {
         nome: req.body.nome,
@@ -31,10 +34,12 @@ app.put('/users/:id', (req, res, next) => {
     res.send(usuarioService.atualizarPorID(parseInt(req.params.id), usuario))
 })
 
+//find all
 app.get('/users', (req, res, next) => {
     res.send(usuarioService.listarTodos())
 })
 
+//find by id
 app.get('/users/:id', (req, res, next) => {
     res.send(usuarioService.buscaPorID(parseInt(req.params.id)))
 })
