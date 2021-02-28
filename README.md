@@ -29,10 +29,10 @@
 
 ###### Verbos de Requisição HTTP:
 	Listar Todos Usuários | GET    | /users
-    Listar Usuário	      | GET    | /users/:id - onde {id} será um parâmetro recebido na URI
-	Cadastrar Usuário	  | POST   | /users - no Corpo deverá ser informado um JSON com os dados do Usuário
-    Editar Usuário		  | PUT    | /users/:id - onde {id} será um parâmetro recebido na URI; no Corpo o JSON com os dados atualizados
-	Remover Usuário	      | DELETE | /users/:id - onde {id} será um parâmetro recebido na URI
+        Listar Usuário	      | GET    | /users/:id - onde {id} será um parâmetro inteiro recebido na URI
+	Cadastrar Usuário     | POST   | /users - no Corpo deverá ser informado um JSON com os dados do Usuário
+        Editar Usuário	      | PUT    | /users/:id - onde {id} será um parâmetro inteiro recebido na URI; no Corpo o JSON com os dados atualizados
+	Remover Usuário	      | DELETE | /users/:id - onde {id} será um parâmetro inteiro recebido na URI
   	
 ###### Sobre mim:
   - [Linkedin](https://www.linkedin.com/in/lucas-laet-b47452187/)
