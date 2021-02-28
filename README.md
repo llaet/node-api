@@ -12,7 +12,7 @@
 	git clone https://github.com/llaet/node-api.git
 
 ###### Como rodar o projeto
-	Na pasta do projeto
+	Na pasta src do projeto
   	node UsuarioController.js
 	
 ###### O que é uma API?
